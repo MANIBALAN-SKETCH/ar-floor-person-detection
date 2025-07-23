@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>&lt;model-viewer&gt; example</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="demo-styles.css">
+  
+  <!-- The following libraries and polyfills are recommended to maximize browser support -->
+  <!-- NOTE: you must adjust the paths as appropriate for your project -->
+  
+  <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+  <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+</head> 
+<body>
+  <div id="card">
+    <!-- All you need to put beautiful, interactive 3D content on your site: -->
+    <model-viewer camera-controls touch-action="pan-y" autoplay ar ar-modes="webxr scene-viewer" scale="0.2 0.2 0.2" shadow-intensity="1" src="https://cdn.glitch.global/5c43672f-57ff-4ba1-8133-62af24dbe59c/apple_vision_pro.glb?v=1744998395938"
+                  poster="https://cdn.glitch.global/de4399fb-4ed3-4d0d-94fe-cec0019eee82/ar.png?v=1744835163915">
+      
+    </model-viewer>
+    <section class="attribution">
+      <span>
+        <h1>Apple Vision Pro </h1>
+        <span>By <a href="https://allreal.io/" target="_blank">AllReal</a></span>
+      </span>
+    </section>
+  </div>
+  
+  <footer></footer>
+  
+  <!-- 💁 Include both scripts below to support all browsers! -->
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+</body>
+</html>
